@@ -33,6 +33,10 @@ public class ArrayListDemo{
    System.out.println(words);
       
    }
+   // Task 5: Add "*" after each words
+   addStars(words);
+   System.out.println(words);
+   
    /*
       Method: Display words in reverse order
       Param: ArrayList<String>
@@ -71,5 +75,17 @@ public class ArrayListDemo{
             i--;
          }   
       }
+   }
+      /*
+      Method: Add star aftereach void
+      Param: ArrayList<String>
+      Return: void
+   */
+   public static void addStars(ArrayList<String> list){
+      //Loops through the list
+      for(int i = 1; i < list.size(); i+=2){
+         list.add(i, "*");
+      }
+      System.out.println(list);
    }
 }
